@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="textContainer">
+        <h1 class="d_f bouncingAnim">
+            <span>D</span>
+            <span>I</span>
+            <span>C</span>
+            <span>E</span>
+            <span>-</span>
+            <span>G</span>
+            <span>A</span>
+            <span>M</span>
+            <span>E</span>
+        </h1>
+    </div>
+
+    <div class="TitleRefresh">
+        <center><h2 id="result">Refresh Me</h2></center>
+    </div>
+        
+    <div class="Dices">
+        <div class="Player1" id="resultc" >
+           <h4> Player 1</h4> <img id="leftDice" src="dice6.png" alt="Dice Image" style=" width: 150px">
+        </div>
+        <div class="Player2" id="resultc">
+            <h4> Player 2 </h4> <img id="rightDice" src="dice6.png" alt="Dice Image" style="
+    width: 150px">
+        </div>
+    </div>
+
+   <center><button class="clay-btn" onclick="rollDice()">Roll Dice</button></center> 
+
+    <script src="index.js"></script>
+</body>
+</html>

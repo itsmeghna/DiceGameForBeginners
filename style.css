@@ -1,0 +1,183 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.4), rgba(0,0,0,0.4));
+    }
+
+
+body:hover {
+animation-name: background-color;
+animation-duration: 4s; 
+}
+
+@keyframes background-color{
+    0% {
+      background-color: aqua;
+    }
+   25% {
+      background-color: #9A1663;
+    }
+    50% {
+      background-color: #E0144C;
+    }
+    75% {
+      background-color: #FF5858;
+    }
+    100% {
+      background-color: #FF97C1;
+    }
+  }
+.textContainer {
+	width: 100%;
+	height: 20vh;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+}
+h1 {
+	position: relative;
+	text-transform: uppercase;
+	font-size: 50px;
+	letter-spacing: 2px;
+	margin-bottom: 20px;
+	color: red;
+	justify-content: center;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+span {
+	display: inline-block; 
+	position: relative; 
+}
+.bouncingAnim {
+	justify-content: center;
+	align-items: flex-end;
+}
+.bouncingAnim span.ml_25 {margin-left: 25px;}
+.bouncingAnim span:nth-child(1) {animation: bounce 2.3s ease-in-out infinite; }
+.bouncingAnim span:nth-child(2) {animation: bounce 2.3s ease-in-out .33s infinite; }
+.bouncingAnim span:nth-child(3) {animation: bounce 2.3s ease-in-out 0.66s infinite; }
+.bouncingAnim span:nth-child(4) {animation: bounce 2.3s ease-in-out 0.99s infinite; }
+.bouncingAnim span:nth-child(5) {animation: bounce 2.3s ease-in-out 1.33s infinite; }
+.bouncingAnim span:nth-child(6) {animation: bounce 2.3s ease-in-out 1.66s infinite; }
+.bouncingAnim span:nth-child(7) {animation: bounce 2.3s ease-in-out 1.99s infinite; }
+.bouncingAnim span:nth-child(8) {animation: bounce 2.3s ease-in-out 2.33s infinite; }
+.bouncingAnim span:nth-child(9) {animation: bounce 2.3s ease-in-out 2.66s infinite; }
+.bouncingAnim span:nth-child(10) {animation: bounce 2.3s ease-in-out 2.99s infinite; }
+
+@-webkit-keyframes bounce{
+  0%, 75%, 100%{
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  25%{
+    -webkit-transform: translateY(-7px);
+    -ms-transform: translateY(-7px);
+    -o-transform: translateY(-7px);
+    transform: translateY(-7px);
+    opacity: .5;
+  }
+}
+@keyframes bounce{
+  0%, 75%, 100%{
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  25%{
+    -webkit-transform: translateY(-7px);
+    -ms-transform: translateY(-7px);
+    -o-transform: translateY(-7px);
+    transform: translateY(-7px);
+    opacity: .5;
+  }
+}
+.TitleRefresh {
+    text-align: center;
+    margin: 20px;
+}
+
+.Dices{
+    display: flex;
+    justify-content:space-around;
+}
+center {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+img {
+    display: block;
+    margin: 20px auto;
+    width: 100px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: rotate(360deg);
+}
+
+button {
+    display: inline-block;
+    border: 0;
+    padding: 1.5rem 2.5rem;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .clay-btn {
+    background: #00bb68;
+    border-radius: 15px;
+    box-shadow: 
+      8px 8px 16px rgba(0,0,0, 0.2),
+      inset -8px -8px 12px rgba(0,0,0, 0.2),
+      inset 8px 8px 12px rgba(255, 255, 255, 0.4);
+  }
+  .clay-btn:hover {
+    background: #e29cd8;
+  }
+  .clay-btn:active {
+     animation: bounce 0.3s;
+  }
+  @keyframes bounce {
+     0% {
+          transform: scale(1);
+        }
+        25% {
+          transform: scale(0.95);
+        }
+        50% {
+          transform: scale(1.1);
+        }
+        75% {
+          transform: scale(0.98);
+        }
+        100% {
+          transform: scale(1);
+        }
+  }
+
+  #resultc{
+    font-family: 'Georgia', serif;
+    text-align: center;
+    color: #052466;
+  }
